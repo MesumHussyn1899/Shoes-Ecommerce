@@ -7,7 +7,7 @@
 
 
       <div class="main-wrapper">
-        <h2 class="title">SHOP BY CLASSICS</h2>
+        <h2 class="title">SHOP BY --- CLASSICS</h2>
         <div class="card-wrapper">
             <div class="product-card">
                 <img src="https://onedegree.com.pk/cdn/shop/files/White-Shoes-1_1.jpg?v=1718256700&width=720" alt="Cortez" class="product-image">
