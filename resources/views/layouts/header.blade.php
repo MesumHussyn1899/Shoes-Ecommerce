@@ -1,3 +1,4 @@
+
 <div class="header">
         <h1>Shoe-Spot</h1>
         <p>Step into confidence with every pair</p>

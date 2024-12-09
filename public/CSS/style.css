@@ -1168,3 +1168,263 @@ h2 {
       padding: 8px 16px;
   }
 }
+
+
+
+
+/* Reviews Section */
+/* Reviews Container */
+.no-reviews-message {
+  text-align: center;
+  margin-right: 240px;
+}
+
+.reviews-section {
+  clear: both; /* Ensure it doesn't float */
+  margin: 30px 0; /* Add space before and after */
+}
+
+.login-section {
+  clear: both; /* Ensures it's on its own line */
+  margin: 30px 0; /* Add space before and after */
+}
+
+.login-prompt {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 50%; /* Make it 50% of the page width */
+  margin: 30px auto; /* Center it horizontally and add spacing above and below */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+}
+
+.login-prompt p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #007bff; /* Blue link color */
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+.login-link:hover {
+  color: #0056b3; /* Darker blue when hovered */
+}
+
+.reviews {
+  background-color: #f9f3f3;
+  padding: 30px;
+  border-radius: 10px;
+  width: 50%; /* Set width to 50% */
+  margin: 50px auto; /* Center horizontally and add space on top and bottom */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for a polished look */
+  text-align: center;
+  clear: both; /* Ensures it clears previous floats or content */
+}
+
+/* Review Form */
+.review-form {
+  background-color: #f9f3f3;
+  width: 50%; /* Set width to 50% */
+  margin: 20px auto; /* Center horizontally */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Form shadow */
+  text-align: center;
+  clear: both; /* Ensures it clears previous floats or content */
+}
+
+/* Form Group */
+.review-form .form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.review-form label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hide Default Radio Buttons */
+.review-form input[type="radio"] {
+  display: none;
+}
+
+/* Star Rating */
+.review-form .star-rating {
+  display: flex;
+  justify-content: center; /* Center the stars horizontally */
+  direction: rtl; /* Reverse the flow of stars visually */
+  margin-top: 10px;
+  width: 100%;
+}
+
+.review-form .star-rating label {
+  font-size: 2rem; /* Adjust the star size */
+  color: #ccc; /* Default star color */
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+  direction: ltr; /* Ensure logical flow for accessibility */
+}
+
+.review-form .star-rating label:hover,
+.review-form .star-rating label:hover ~ label {
+  color: #ffcc00; /* Highlight stars in gold */
+}
+
+.review-form .star-rating input[type="radio"]:checked ~ label {
+  color: #ffcc00; /* Checked stars remain highlighted */
+}
+
+/* Review Textarea */
+.review-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* Submit Button */
+.review-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%; /* Full width for the button */
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.middlee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 10px;
+  background-color: #ffae42; /* Blue shade */
+  color: #fff; /* White text */
+  border-radius: 8px;
+  padding: 1%; /* 10% padding */
+  width: 30%;
+  margin-left: 35%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  font-weight: bolder;
+}
+
+/* Rating Summary */
+.rating-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Average Rating */
+.average-rating {
+  text-align: center;
+}
+
+.average-rating span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.average-rating .stars {
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+/* Rating Distribution */
+.rating-distribution {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.distribution-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.bar {
+  flex-grow: 1;
+  background: #ccc;
+  border-radius: 4px;
+  margin: 0 10px;
+  height: 10px;
+  position: relative;
+}
+
+.bar .fill {
+  background: #ffcc00;
+  height: 10px;
+  border-radius: 4px;
+}
+
+/* Review List */
+.review-list .review {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stars .star {
+  color: #ccc;
+}
+
+.stars .star.filled {
+  color: #ffcc00;
+}
+
+.review-title {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Login Prompt */
+.login-prompt {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-prompt p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.login-link:hover {
+  color: #0056b3;
+}
